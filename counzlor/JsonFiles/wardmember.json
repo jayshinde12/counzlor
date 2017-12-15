@@ -1,0 +1,16 @@
+{
+    "wardmember":[
+        {
+            "name":"jay",
+            "wardnumber":"1234",
+            "membermp":"pimpri",
+            "address":"pimpri pune"
+        },
+        {
+            "name":"tejas",
+            "wardnumber":"124",
+            "membermp":"chinchwad",
+            "address":"Kokan"
+        }
+    ]
+}

@@ -1,3 +1,20 @@
 .logincss{
     margin-top:10px;  
 }
+.notificationbtn{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.powerbtn{
+    color: white;
+    font-size: 20px;
+    padding: 17px 1px;
+}
+.dropdown-menu-change
+{
+    min-width: 400px !important;
+}
+.modal-dialog{
+    margin:70px auto !important;
+}

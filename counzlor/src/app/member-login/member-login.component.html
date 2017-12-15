@@ -14,16 +14,16 @@
             <!-- Register/Login Tabs-->
             <div class="reg-options">
               <ul class="nav nav-tabs">
-                  <li><a href="#login" data-toggle="tab">Login</a></li>
-                <li  class="active"><a href="#register" data-toggle="tab">Register</a></li>
+                  <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+                <li><a href="#register" data-toggle="tab">Register</a></li>
               </ul><!--Tabs End-->
             </div>
             
             <!--Registration Form Contents-->
             <div class="tab-content">
-              <div class="tab-pane active" id="register">
+              <div class="tab-pane" id="register">
                 <h3>Register Now !!!</h3>
-                <p class="text-muted">For registration of ward Member please contact <b>admin@counzlor.com</b></p>
+                <p class="text-muted">To activate account please contact <b>admin@counzlor.com</b></p>
                 
                 <!--Register Form-->
                <!-- <form name="registration_form" id='registration_form' class="form-inline">
@@ -395,12 +395,12 @@
                     </div>
                   </div>
                 </form>--><!--Register Now Form Ends-->
-                <p><a href="#">Already have an account?</a></p>
-                <a href="#login" data-toggle="tab"><button class="btn btn-primary">Login</button></a>
+                <!--<p><a href="#">Already have an account?</a></p>
+                <a href="#login" data-toggle="tab"><button class="btn btn-primary">Login</button></a>-->
               </div><!--Registration Form Contents Ends-->
               
               <!--Login-->
-              <div class="tab-pane" id="login">
+              <div class="tab-pane active" id="login">
                 <h3>Login</h3>
                 <p class="text-muted">Log into your account</p>
                 
@@ -419,7 +419,7 @@
                     </div>
                   </div>
                 </form><!--Login Form Ends--> 
-                <p><a href="#">Forgot Password?</a></p>
+                <p><a href="" data-toggle="modal" data-target="#myModal">Forgot Password?</a></p>
                 <button class="btn btn-primary">Login Now</button>
               </div>
             </div>
@@ -441,4 +441,30 @@
       </div>
     </div>
   </div>
- 
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Reset Password</h4>
+        </div>
+        <form>
+        <div class="modal-body">
+              <input class="form-control input-group-lg" type="email" name="ResetEmail" placeholder="Enter Your Email"/>
+        </div>
+        <div class="alert alert-success">
+            <strong>Success!</strong> Your username and password has been sent on your mail-id.
+          </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+      </div>
+      
+    </div>
+  </div>
+  
+  <app-footer></app-footer>

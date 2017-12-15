@@ -6,22 +6,11 @@
       ================================================= -->
       <div class="create-post">
         <div class="row">
-          <div class="col-md-7 col-sm-7">
-            <div class="form-group">
-              <img src="http://placehold.it/300x300" alt="" class="profile-photo-md" />
-              <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
+            <div class="col-md-8 col-sm-8">
+                <h4>You don't have any Jobs Updates.  </h4>  
             </div>
-          </div>
-          <div class="col-md-5 col-sm-5">
-            <div class="tools">
-              <ul class="publishing-tools list-inline">
-                <li><a href="#"><i class="ion-compose"></i></a></li>
-                <li><a href="" data-toggle="modal" data-target="#imageModal"><i class="ion-images" ></i></a></li>
-                <li><a href="" data-toggle="modal" data-target="#videoModal"><i class="ion-ios-videocam" ></i></a></li>
-               <!-- <li><a href="#"><i class="ion-map"></i></a></li>--> 
-              </ul>
-              <!--<button class="btn btn-primary pull-right">Publish</button>-->
-            </div>
+          <div class="col-md-4 col-sm-4">
+              <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal">Create Job</button>
           </div>
         </div>
       </div><!-- Post Create Box End-->
@@ -187,53 +176,38 @@
   </div>
 </div>
 
+<!--===================Model=================-->
 <!-- Modal -->
-<div class="modal fade" id="imageModal" role="dialog">
+<div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Upolad Image</h4>
+          <h4 class="modal-title">Create Job</h4>
         </div>
-        <form>
         <div class="modal-body">
-            <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
-            <br>
-            <button type="button" class="btn btn-info">Upload Image</button>
+          <form >
+            <label for="usr">Job Title</label>
+            <input type="text" class="form-control" id="usr">
+            <label for="usr">Location</label>
+            <input type="text" class="form-control" id="usr">
+            <label for="usr">Interview Date/Time</label>
+            <input type="text" class="form-control" id="usr">
+            <label for="comment">Profile Descreption</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+            <label for="comment">Upload Image</label>
+
+
+        </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Publish post</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
-      </form>
       </div>
       
     </div>
   </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="videoModal" role="dialog">
-      <div class="modal-dialog">
-      
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <form>
-              <div class="modal-body">
-                  <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
-                  <br>
-                  <button type="button" class="btn btn-info">Upload Video</button>
-                
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Publish post</button>
-              </div>
-            </form>
-        
-      </div>
-    </div>
-    
+<!--====================Module close ==========================-->

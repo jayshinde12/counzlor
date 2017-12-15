@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Http, Response, Headers } from '@angular/http';
 @Component({
   selector: 'app-user-info',
   templateUrl: './user-info.component.html',
-  styleUrls: ['./user-info.component.css','../cust/css/style.css','../cust/css/bootstrap.min.css','../cust/css/ionicons.min.css','../cust/css/ionicons.min.css','../cust/css/font-awesome.min.css']
+  styleUrls: ['./user-info.component.css']
 })
 export class UserInfoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: Http) {}
+
+  wardmember = [];
+  fetchData = function()
+  {
+    this.http.get("http://localhost:5555/wardmember").subscribe(
+      (res: Response) =>{
+        this.wardmember = res.json();
+      }
+    )
+  }
 
   ngOnInit() {
+    this.fetchData();
   }
 
 }

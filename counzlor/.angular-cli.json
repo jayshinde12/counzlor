@@ -19,6 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/ionicons.min.css",
+        "assets/css/font-awesome.min.css",
         "styles.css"
       ],
       "scripts": [],

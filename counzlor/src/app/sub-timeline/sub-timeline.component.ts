@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+/*import {FileUploadModule} from 'primeng/primeng';*/
 
 @Component({
   selector: 'app-sub-timeline',
   templateUrl: './sub-timeline.component.html',
-  styleUrls: ['./sub-timeline.component.css','../cust/css/style.css','../cust/css/bootstrap.min.css','../cust/css/ionicons.min.css','../cust/css/ionicons.min.css','../cust/css/font-awesome.min.css']
+  styleUrls: ['./sub-timeline.component.css']
 })
 export class SubTimelineComponent implements OnInit {
 
