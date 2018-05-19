@@ -1,10 +1,9 @@
 node('master'){
    
-    stage('Stage One'){
-      echo "This is test stage"
-    }
-
     stage('Checkout'){
+	  echo "Cloning Git Repository"
       scm checkout
     }
+	
+	
 }
