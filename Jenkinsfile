@@ -1,6 +1,6 @@
 node('master'){
    
-    stage('Checkout'){
+    stage('Clear Workspace'){
 	  echo "Clear Workspace"
       deleteDir()
     }
